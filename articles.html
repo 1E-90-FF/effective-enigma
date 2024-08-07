@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: 'NetWatch'
+css: "/css/index.css"
+---
+
+<div class="container">
+    <h1>Latest Privacy Tips and News</h1>
+    <div class="articles-posts">
+      {% for post in collections.posts %}
+      <div class="articles-post">
+        <h3><a href="{{ post.url }}" style="color: #1b122d;">{{ post.data.title }}</a></h3>
+        <p>{{ post.data.description }}</p>
+        <a href="{{ post.url }}">Read More</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net-Watch</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">     
+    <link rel="stylesheet" href=/css/index.css>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-main">
+            <div class="logo">
+                <img src="/images/FullLogo_Transparent_NoBuffer.png" alt="NetWatch"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/articles">Articles</a></li>
+                    <!--<li><a href="#contact">Contact</a></li>-->
+                    <li><a href="/assessment" class="cta">Free Assessment</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <br>
+    <style>
+    .form-container {
+        background: #fff;
+        padding: 30px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 600px;
+    }
+    .form-container h2 {
+        margin-bottom: 20px;
+        font-size: 2em;
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    .form-group textarea {
+        height: 150px;
+        resize: vertical;
+    }
+    .form-group button {
+        background: #ffc414;
+        color: #1b122d;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    .form-group button:hover {
+        background: #e6b213;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .form-container {
+            width: 90%;
+            padding: 20px;
+        }
+        .form-container h2 {
+            font-size: 1.5em;
+        }
+    }
+    @media (max-width: 480px) {
+        .form-container {
+            width: 95%;
+            padding: 15px;
+        }
+        .form-container h2 {
+            font-size: 1.2em;
+        }
+        .form-group input,
+        .form-group textarea {
+            padding: 8px;
+        }
+        .form-group button {
+            padding: 8px 16px;
+            font-size: 0.9em;
+        }
+    }
+</style>
+<section class="form-container">
+    <h2>Get Your Free Assessment</h2>
+    <form name="assessment" method="POST" data-netlify="true">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</section>
+    <footer class="container">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@digitalprivacy.com</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('showing');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net-Watch</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">     
+    <link rel="stylesheet" href=/css/index.css>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-main">
+            <div class="logo">
+                <img src="/images/FullLogo_Transparent_NoBuffer.png" alt="NetWatch"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/articles">Articles</a></li>
+                    <!--<li><a href="#contact">Contact</a></li>-->
+                    <li><a href="/assessment" class="cta">Free Assessment</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <br>
+    
+<div class="container">
+    <h1>Latest Privacy Tips and News</h1>
+    <div class="articles-posts">
+      
+      <div class="articles-post">
+        <h3><a href="/posts/A Guide to Password Best Practices/" style="color: #1b122d;">Securing Your Digital Life: A Guide to Password Best Practices</a></h3>
+        <p>A guild best practices for creating, managing, and storing strong passwords to enhance digital security.</p>
+        <a href="/posts/A Guide to Password Best Practices/">Read More</a>
+      </div>
+      
+      <div class="articles-post">
+        <h3><a href="/posts/GrapheneOS: A Paradigm Shift in Mobile Security and Privacy/" style="color: #1b122d;">GrapheneOS: A Paradigm Shift in Mobile Security and Privacy</a></h3>
+        <p>GrapheneOS is a privacy-focused, open-source mobile operating system based on AOSP, emphasizing enhanced security, advanced privacy features, and maintaining usability for a secure mobile experience.</p>
+        <a href="/posts/GrapheneOS: A Paradigm Shift in Mobile Security and Privacy/">Read More</a>
+      </div>
+      
+    </div>
+  </div>
+    <footer class="container">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@digitalprivacy.com</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('showing');
+        });
+    </script>
+</body>
+</html>
